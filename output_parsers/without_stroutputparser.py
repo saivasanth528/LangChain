@@ -5,14 +5,14 @@ from langchain_core.prompts import PromptTemplate
 
 load_dotenv()
 
-# llm = HuggingFaceEndpoint(
-#     repo_id="google/gemma-2-2b-it",
-#     task="text-generation"
-#     )
-#
-# model = ChatHuggingFace(llm=llm)
+llm = HuggingFaceEndpoint(
+    repo_id="google/gemma-2-2b-it",
+    task="text-generation"
+    )
+
+model = ChatHuggingFace(llm=llm)
 # The above one was restricted.
-model = ChatOpenAI()
+# model = ChatOpenAI()
 
 template1 = PromptTemplate(
     template='Write a detailed report on {topic} ',
