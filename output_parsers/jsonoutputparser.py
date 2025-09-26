@@ -22,7 +22,7 @@ template=PromptTemplate(
 
 prompt = template.format()
 """
-Give the name, age and city of aictional person 
+Give the name, age and city of a  fictional person 
  Return a JSON object.
  
  This is the output of the above prompt, the last line was get filled through parser
